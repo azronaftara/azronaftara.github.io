@@ -1,3 +1,7 @@
+/* PERINGATAN!
+SOURCE CODE INI PENUH DENGAN KE SEMRAWUTAN, JIKA ADA EFEK SAMPING SETELAH MEMBACA SOURCE CODE INI, ITU DILUAR TANGGUNG JAWAB PENULIS
+*/
+
 /* clearing */
 *{
     margin: 0;
@@ -6,14 +10,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(207, 222, 235);
-    /* height: 10000px; */
     overflow-x: hidden;
 }
 .header{
-    /* background-color: rgb(233, 131, 14); */
-    /* background-color: rgb(241, 63, 227); */
     background: rgb(0,255,235);
-    /* background: linear-gradient(90deg, rgba(0,255,235,1) 0%, rgba(0,255,94,1) 100%); */
     background: linear-gradient(90deg, rgb(224, 235, 235) 0%, rgb(255, 197, 5) 100%);
     display: flex;
     height: 50px;
@@ -27,19 +27,10 @@ body{
     top: 0px;
     z-index: 1000; 
 }
-/* .git{
-    position: sticky;
-    display: block;
-    top: 50vh;
-    bottom: 20vh;
-} */
 .header .logo{
     font-family: monospace;
     cursor: pointer;
     position: relative;
-    /* background: -webkit-linear-gradient(rgb(17, 16, 16), rgb(232, 255, 252));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 .header .nav ul{ 
     display: inline-block;
@@ -56,7 +47,6 @@ body{
     color: black;
 }
 .main{
-    /* background-color: blue; */
     background-image: url(bg.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -75,7 +65,7 @@ body{
     position: fixed;
     position: relative;
     animation: flif 2s linear alternate-reverse infinite;
-
+    cursor: pointer;
 }
 .main .nama{
     font-family: 'Montserrat', sans-serif;
@@ -85,7 +75,6 @@ body{
     font-size: 1.5rem;
     color: white;
     animation: warna 1s linear alternate infinite;
-
 }
 .about{
     padding: 16px;
@@ -111,7 +100,6 @@ body{
 .footer{
     width: 100%;
     height: 70px;
-    /* background-color: rgb(187, 110, 10); */
     background: rgb(0,255,235);
     background: linear-gradient(45deg, rgb(235, 195, 37) 0%, rgb(221, 91, 21) 100%);
     text-align: center;
@@ -119,9 +107,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: sticky;
-    top:100% ;
-    bottom: 0; */
 }
 .footer a{
     color: rgb(36, 33, 33);
@@ -131,6 +116,20 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 50px;
 }
+.tutup{
+    display: none;
+    position: fixed;
+    background-color: rgb(42, 45, 46);
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: skyblue;
+    text-align: center;
+    font-family: monospace;
+}
 marquee{
     position: relative;
     font-family: Helvetica, sans-serif;
@@ -139,7 +138,6 @@ marquee{
     color: rgb(255, 255, 255);
     margin-top: -339px;
     z-index: 500;
-    /* background-color: rgb(46, 42, 42); */
     animation: warnaj 2s linear alternate-reverse infinite;
 }
 
@@ -155,21 +153,15 @@ marquee{
 }
 .header .nav li :hover{
     color: rgb(255, 248, 248);
-    /* background-color: rgb(39, 30, 29);
-    padding: 30px; */
 }
 
 /* animasi */
  @keyframes flif{
-    0%{
-        
+    0%{ 
         top: 0px;
-        /* transform: rotateX(-30deg); */
     }
     100%{
-        /* transform: rotateY(30deg); */
-        top: -20px;
-        
+        top: -20px;  
     }
 }
 @keyframes kaki{
@@ -217,15 +209,16 @@ marquee{
         display: flex;
         text-align: center;
         justify-content: center;
-
     }
     .header .logo{
         margin: 0 auto;
-        /* background-color: red; */
         padding: 0;
     }
     .header .nav ul{
         padding: 0px;
+    }
+    .tutup{
+        display: flex;
     }
 }
 
