@@ -9,19 +9,26 @@ body{
 body main span p{
     font-weight: 400;
 }
-/* header nav a:after{
-    content: "";
-    width: 0%;
-    height: 1px;
-    background-color: white;
-    position: absolute;
-    top: 60px;
-    margin-left: -55px;
-    transition: all 100ms;
-}
-header nav a:hover:after{
-    width: 4%;
-} */
 .active{
     color: tomato;
+}
+.tutup{
+    display: none;
+    position: fixed;
+    background-color: rgb(42, 45, 46);
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: skyblue;
+    text-align: center;
+    font-family: monospace;
+}
+
+@media (max-width:576px) { 
+    .tutup{
+        display: flex;
+    }
 }
