@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+body main span p{
+    font-weight: 400;
+}
+/* header nav a:after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    margin-left: -55px;
+    transition: all 100ms;
+}
+header nav a:hover:after{
+    width: 4%;
+} */
+.active{
+    color: tomato;
+}
